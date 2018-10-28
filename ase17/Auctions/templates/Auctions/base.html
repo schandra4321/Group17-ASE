@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'Auctions/home.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Kaushan+Script" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-light navbar-expand-md bg-gradient-light justify-content-md-center justify-content-start mynav">
+      <a class="navbar-brand d-md-none d-inline" href="">Bid 'n' Win</a>
+        <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <nav class="navbar navbar-light bg-light">
+            <a href="#">
+                <img src="{% static 'Auctions/auctionlogo.png' %}" width="120" height="80" alt="">
+            <a>
+          </nav>
+        <a class="nav-link" href="#"><i class="fa fa-search mr-1"></i></a>
+        <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
+          <ul class="navbar-nav mx-auto text-md-center text-left">
+              <li class="nav-item">
+                  <a class="nav-link homeelement" id="homeelement-1"  href="#">HOME <hr class="hr1"> </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link homeelement" id="homeelement-2"  href="#">EXPLORE <hr class="hr1"> </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link homeelement" id="homeelement-5"  href="#">LOGIN <hr class="hr1"> </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link homeelement" id="homeelement-3"  href="#">REGISTER <hr class="hr1"> </a>
+              </li>
+
+              <form class="form-inline my-2 my-lg-0" id="homeelement-4">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">SEARCH</button>
+              </form>
+          </ul>
+      </div>
+    </nav>
+
+
+    {% block content %}{% endblock %}
+
+    </body>
+</html>
