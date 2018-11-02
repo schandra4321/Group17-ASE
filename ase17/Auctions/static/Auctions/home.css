@@ -1,41 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,300);
 
-.homeelement{
-  font-size: 20px;
-}
-#homeelement-1{
-  position: absolute;
-  top: 35px;
-  left: 300px;
-  font-family: 'Raleway', sans-serif;
-}
-
-#homeelement-2{
-  position: absolute;
-  top: 35px;
-  left: 425px;
-  font-family: 'Raleway', sans-serif;
-}
-
-#homeelement-5{
-  position: absolute;
-  top: 35px;
-  left: 575px;
-  font-family: 'Raleway', sans-serif;
-}
-
-#homeelement-3{
-  position: absolute;
-  top: 35px;
-  right: 450px;
-  font-family: 'Raleway', sans-serif;
-}
-
-#homeelement-4{
-  position: absolute;
-  top: 43px;
-  right: 50px;
-  font-family: 'Raleway', sans-serif;
-}
 
 .hexagon {
   position: relative;
@@ -351,18 +315,6 @@
   background: inherit;
 }
 
-.hr1 {
-    margin-top: 5px;
-    width: 0%;
-    background: black;
-    height: 1.5px;
-    border: none;
-    transition: width .4s ease-in-out;
-}
-
-nav ul li a:hover hr, nav ul li a hr:hover {
-    width: 100%;
-}
 
 .tagline{
   font-family: 'Kaushan Script', cursive;
@@ -370,8 +322,6 @@ nav ul li a:hover hr, nav ul li a hr:hover {
   position: absolute;
   left: 300px;
 }
-
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,300);
 
 .circle-wrap {
   margin: 50px auto;
@@ -615,3 +565,4 @@ nav ul li a:hover hr, nav ul li a hr:hover {
   height: 1.5px;
   border: none;
 }
+
