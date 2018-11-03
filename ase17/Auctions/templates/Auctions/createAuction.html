@@ -1,0 +1,51 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Auction</title>
+</head>
+
+<body>
+
+    {% if auction_formset.errors or auction_details.errors %}
+        {% for errors in auction_details.errors %}
+          {{ errors }}
+        {% endfor %}
+    {% endif %}
+    <br>
+    <br>
+    <form method="POST" action="{% url 'create-auction' %}">
+        <!-- Create A drop down containing all categories (hardcode it) -->
+        {% csrf_token %}
+        {{ auction_details.as_p }}
+        <div>
+            {% for errors in item.errors %}
+                    {{ errors }}
+            {% endfor %}
+
+            {{ auction_formset.management_form }}
+            {% for item in auction_formset %}
+             <div class="link-formset">
+
+
+                 {{ item.as_p }}
+            </div>
+
+            {% endfor %}
+        </div>
+        <input type="submit" value="Create-Auction">
+    </form>    
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="{% static 'js/jquery.formset.js' %}"></script>
+<script type="text/javascript">
+    $('.link-formset').formset({
+        addText: 'Add Item',
+        deleteText: ' Remove Item',
+    });
+</script>
+
+
+</html>
